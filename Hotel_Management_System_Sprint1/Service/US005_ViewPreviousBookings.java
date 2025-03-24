@@ -14,6 +14,7 @@ public class US005_ViewPreviousBookings {
 			pstmt.setInt(1, userId);
 			ResultSet resultBookings = pstmt.executeQuery();
 			boolean recordsFound = false;
+			int num =0;
 			while(resultBookings.next()) {
 				recordsFound = true;
 				System.out.println("==============================================================================================================================");
